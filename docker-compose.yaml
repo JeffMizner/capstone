@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+# Building the database
+  mongo: 
+    image: mongo
+    ports: 
+      - "27017:27017"
+    restart: always
+
+  # Building the front end with a link to mongodb
+  web:
+    # This builds from the docker file that is in the root
+    build: .
+    ports: 
+      - "3000:3000"
+    links: 
+      - mongo
+    command: node index.js

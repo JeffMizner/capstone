@@ -1,0 +1,19 @@
+{
+  "name": "capstone2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "jeffery.mizner@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jslint": "^0.12.1",
+    "mongodb": "^4.3.0",
+    "webpack": "^5.65.0"
+  },
+  "description": ""
+}
